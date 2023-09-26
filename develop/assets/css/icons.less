@@ -1,0 +1,113 @@
+.icon-svg-b(@folder, @name) {
+   background-image: url("../data/icons/@{folder}/@{name}.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+}
+.icon-svg(@name) {
+   background-image: url("../data/icons/@{name}.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   flex-shrink: 0;
+}
+.size-1() {
+   width: 1rem;
+   height: 1rem;
+}
+.size-12() {
+   width: 1.2rem;
+   height: 1.2rem;
+}
+.size-14() {
+   width: 1.4rem;
+   height: 1.4rem;
+}
+.size-15() {
+   width: 1.5rem;
+   height: 1.5rem;
+}
+.size-18() {
+   width: 1.8rem;
+   height: 1.8rem;
+}
+.size-2() {
+   width: 2rem;
+   height: 2rem;
+}
+.size-23() {
+   width: 2.3rem;
+   height: 2.3rem;
+}
+.size-25() {
+   width: 2.5rem;
+   height: 2.5rem;
+}
+.size-30() {
+   width: 3rem;
+   height: 3rem;
+}
+.size-33() {
+   width: 3.3rem;
+   height: 3.3rem;
+}
+.size-36() {
+   width: 3.6rem;
+   height: 3.6rem;
+}
+.size-5() {
+   width: 5rem;
+   height: 5rem;
+}
+.size-6() {
+   width: 6rem;
+   height: 6rem;
+}
+
+
+
+
+
+.quota() {
+   .icon-svg( 'quota' );
+}
+
+.benefit-1() {
+   .icon-svg( 'benefit-1' );
+   background-position: top;
+}
+.benefit-2() {
+   .icon-svg( 'benefit-2' );
+   background-position: top;
+}
+.benefit-3() {
+   .icon-svg( 'benefit-3' );
+   background-position: top;
+}
+
+
+
+.icon-arrow-top {
+   .icon-svg( 'arrow-top' );
+   .size-2();
+   .tr();
+}
+
+
+
+.icon-ok {
+   .icon-svg-b( 'social', 'ok-d' );
+   .size-18();
+   .tr();
+}
+.icon-vk {
+   .icon-svg-b( 'social', 'vk-d' );
+   .size-18();
+   .tr();
+}
+.icon-telegram {
+   .icon-svg-b( 'social', 'telegram' );
+   .size-18();
+   .tr();
+}

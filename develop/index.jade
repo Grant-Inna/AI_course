@@ -1,0 +1,124 @@
+doctype
+html
+
+   include assets/jade/static/__head
+   +title( 'Центры цифрового образования детей IT-cube' )
+
+   body
+      include assets/jade/static/metrika
+      #container_main
+         section( aria-label='Меню и логотип онлайн-курса' ).header__container
+            .wrapper
+               section( aria-label='Меню' )#menu.menu__container
+                  a( href='#about').menu__item О проекте
+                  a( href='#video').menu__item Видео
+                  a( href='#reason').menu__item Регистрация на курс
+                  a( href='#partners').menu__item Парнеры и контакты
+               .section( aria-label='Онлайн-курс просветительских лекций "Искусственный интелект - интернет 21 века"' ).logo__container
+                  .logo__holder
+                     .ratio
+                     .ratio_absolute
+                        .logo
+                  .caption__holder
+                     .ratio
+                     .ratio_absolute
+                        .caption_img
+         section( aria-label='Обращение Путина' ).appeal__container
+            .wrapper
+               .appeal__holder
+                  .appeal__image
+                     .ratio
+                     .ratio_absolute
+                        .image
+                  .appeal__text
+                     h1.mb2 Задача нового этапа в горизонте текущего десятилетия - обеспечить именно массовое внедрение искусственного интеллекта, оно должно охватить все отрасли экономики и социальной сферы и систему госуправления
+                     i президент России Владимир Путин
+
+         section( aria-label='О проекте' )#about.about__container.mb6
+            .wrapper
+               .row.block-right
+                  .about__holder
+                     h1.caption О проекте
+                  .about__holder Осведомлённость о новинках и способность их использования педагогами позволит наладить трехстороннее взаимодействие «учитель-ученик-технологии», тем самым модернизируя образовательный процесс.
+                  .about__holder.block-left
+                     p.mb2 Активное развитие технологий искусственного интеллекта приводит к тому, что они проникают все глубже во все сферы деятельности человека.
+                     p Применение технологий искусственного интеллекта в образовании открывает новые возможности, как для педагога, так и для обучающихся.
+                  .about__holder.about_image
+
+         section( aria-label='Актуальность' )#reason.reason__container.mb6
+            .wrapper
+               .row.block-right
+                  .reason__holder
+                     h1.caption.mb4 Почему нужно изучать технологии искусственного интеллекта?
+                  .reason__holder
+                     .reason__text
+                        p ИИ уже используется в различных областях, от автоматического перевода до автономных автомобилей
+                     .ratio
+                     .ratio_absolute
+                        .reason_block-1
+
+                  .reason__holder
+                     .reason__text
+                        p ИИ может помочь улучшить образование, анализируя данные об учениках и предоставляя персонализированный подход к обучению
+                     .ratio
+                     .ratio_absolute
+                        .reason_block-2.block-left
+                  .reason__holder
+                     .reason__text
+                        p ИИ может помочь улучшить процессы в бизнесе, медицине и других отраслях
+                     .ratio
+                     .ratio_absolute
+                        .reason_block-3
+
+               .register__button
+                  a( href='https://go.reezonly.com/course/2113' target='_blank').register__text
+                     span Зарегистрироваться на курс
+
+         section( aria-label='Польза для педагогов' ).benefit__container
+            .wrapper
+               .row
+                  .benefit__holder
+                     h1.caption.text-white.mb4 Почему это полезно педагогам?
+                  .benefit__holder.benefit_text__holder
+                     .benefit__icon.benefit_icon-1
+                     .benefit__text Создание интерактивных  и&nbsp;красочных уроков
+                  .benefit__holder.benefit_text__holder
+                     .benefit__icon.benefit_icon-2
+                     .benefit__text Повышение цифровой грамотности
+                  .benefit__holder.benefit_text__holder
+                     .benefit__icon.benefit_icon-3
+                     .benefit__text Автоматизация некоторых задач, таких как проверка тестов и&nbsp;заданий
+
+         section( aria-label='Видео с анонсом курса')#video.video__container
+            .wrapper
+
+               .video_relative
+                  .video_ratio
+                  .iframe_holder
+                     video(width='100%' height='auto' controls='controls' poster='./assets/data/images/poster.jpg')
+                       source(src='./assets/data/files/Анонс.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+                       |    Тег video не поддерживается вашим браузером
+
+               .register__button
+                  a( href='https://go.reezonly.com/course/2113' target='_blank').register__text
+                     span Зарегистрироваться на курс
+
+         section( aria-label='Парнеры и контакты' )#partners.partners__container
+            .wrapper
+               .row.mb5
+                  h1.title При участии:
+                  .members__holder
+                     a( href='https://instrao.ru/index.php' target='_blank' ).members.member-1
+                     a( href='https://new.skoltech.ru/' target='_blank' ).members.member-2
+                     a( href='https://itmo.ru/' target='_blank' ).members.member-3
+               .row
+                  h1.title При поддержке:
+                  a( href='https://edu.gov.ru/' target='_blank' ).support
+
+         include assets/jade/footer/footer
+
+      include assets/jade/static/script
+
+
+
+

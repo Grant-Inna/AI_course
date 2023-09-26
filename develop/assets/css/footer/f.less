@@ -1,0 +1,149 @@
+.footer__container {
+   background-color: @color-violet-dark;
+   color: @color-back-white;
+}
+
+
+.footer__holder {
+   .row();
+   .items-start();
+   padding-top: 4.2rem;
+   padding-bottom: 2rem;
+   .md-block({
+      padding-top: 3.6rem;
+      padding-bottom: 3rem;
+   });
+   .xs-block({
+      padding-top: 3rem;
+      padding-bottom: 2.5rem;
+   })
+}
+
+
+.footer__section {
+   .col();
+   .size(12);
+   .size-xl(12);
+   .size-lg(12);
+   .size-md(24);
+   .size-sm(24);
+   
+}
+.footer__contact_social {
+   .justify-end();
+   .md-block({
+      .justify-start()
+   })
+}
+
+.logo_ficto {
+   width: 100%;
+   height: 65px;
+   flex-shrink: 0;
+   
+   .lg-block({
+      height: 55px;
+   });
+   .md-block({
+      height: 60px;
+   })
+}
+
+
+.footer__contact_social {
+   .flex();
+   flex-wrap: wrap;
+   .justify-end();
+   margin-left: 2rem;
+   .md-block({
+      margin-left: 0;
+      padding-top: 3rem;
+   })
+}
+.footer__social {
+    width: 3rem;
+   .ll-block({
+       width: 3rem;
+   });
+   .middle-block({
+       width: 2.5rem;
+      margin-right: 1.4rem;
+   })
+}
+
+.footer__contact_holder {
+   flex-grow: 1;
+   .items-center();
+   .justify-end();
+   margin-bottom: 1.5rem;
+
+}
+
+.footer__contact_holder .footer__contact:first-child {
+   width: 60%;
+   margin-right: 2rem;
+   .xl-block({
+      .flex();
+   .justify-end()
+   })
+}
+.footer__contact_holder .footer__contact:last-child {
+   width: 45%;
+   .flex();
+   .justify-end()
+}
+
+
+
+a.footer__icon {
+   .flex();
+   .items-center();
+}
+
+
+.footer__bottom {
+   .row();
+   .justify-between();
+   padding-top: 3rem;
+
+   border-top: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 1px;
+   
+   color: white;
+}
+.footer__bottom .footer__block {
+   //padding-bottom: 3.4rem;
+   margin-bottom: 0;
+}
+
+
+
+
+
+
+.footer__totop {
+   cursor: pointer;
+   .flex-center();
+   .tr();
+    align-self: end;
+   margin-left: auto !important;
+   width: 4.1rem;
+   height: 4.1rem;
+   border-radius: 1px;
+   background-color: @color-blue-light;
+   
+   .md-block({
+      width: 4.6rem;
+      height: 4.6rem;
+   })
+}
+
+.footer__totop:hover {
+   .tr();
+   background-color: #ffffff;
+   
+   .icon-arrow-top {
+      .icon-svg('arrow-top-hover');
+      .tr();
+   }
+}

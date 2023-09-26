@@ -1,0 +1,112 @@
+@family: 'Roboto';
+
+
+@weight0: 'Light';
+@w-num0: 300;
+
+@weight1: 'Regular';
+@w-num1: 400;
+
+@weight2: 'Medium';
+@w-num2: 500;
+
+
+@weight3: 'Bold';
+@w-num3: 700;
+
+@weight4: 'Black';
+@w-num4: 800;
+
+
+@weight5: 'MediumItalic';
+@w-num5: 500;
+
+
+
+
+
+@font-path: '../fonts/@{family}/@{family}';
+
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight0}'), local('@{family}-@{weight0}'),
+        url('@{font-path}-@{weight0}.ttf') format('truetype');
+    font-weight: @w-num0;
+    font-style: normal;
+}
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight1}'), local('@{family}-@{weight1}'),
+        url('@{font-path}-@{weight1}.ttf') format('truetype');
+    font-weight: @w-num1;
+    font-style: normal;
+}
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight2}'), local('@{family}-@{weight2}'),
+        url('@{font-path}-@{weight2}.ttf') format('truetype');
+    font-weight: @w-num2;
+    font-style: normal;
+}
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight3}'), local('@{family}-@{weight3}'),
+        url('@{font-path}-@{weight3}.ttf') format('truetype');
+    font-weight: @w-num3;
+    font-style: normal;
+}
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight4}'), local('@{family}-@{weight4}'),
+        url('@{font-path}-@{weight4}.ttf') format('truetype');
+    font-weight: @w-num4;
+    font-style: normal;
+}
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight4}'), local('@{family}-@{weight4}'),
+        url('@{font-path}-@{weight4}.ttf') format('truetype');
+    font-weight: @w-num4;
+    font-style: normal;
+}
+@font-face {
+  font-family: @family;
+    src: local('@{family} @{weight5}'), local('@{family}-@{weight5}'),
+        url('@{font-path}-@{weight5}.ttf') format('truetype');
+    font-weight: @w-num5;
+    font-style: italic;
+}
+
+
+
+.roboto-light() {
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+.roboto-regular() {
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+.roboto-medium() {
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+.roboto-bold() {
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+.roboto-black() {
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 800;
+   font-style: normal;
+}
+
+.roboto-mi() {
+   font-family: 'Roboto', Arial, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+}
