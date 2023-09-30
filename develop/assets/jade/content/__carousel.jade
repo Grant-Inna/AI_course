@@ -1,0 +1,9 @@
+mixin carousel( img, name, position)
+   artisle.carousel__holder
+      .carousel__item
+         .carousel__image.mb2
+            .relative
+            .relative_absolute
+               img( src='./assets/data/images/carousel/#{img}.jpg' alt='#{name}' )
+         h1.carousel__name.mb05 #{name}
+         p.carousel__position.mb05 !{position}

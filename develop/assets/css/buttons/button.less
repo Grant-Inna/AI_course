@@ -1,42 +1,23 @@
 .register__button {
    .flex-center();
-   margin-top: 6rem;
 }
 .register__text {
    display: inline-block;
+   overflow: hidden;
    padding: 1rem 2rem;
-   //background-color: #5B35C7;
-   background: linear-gradient(81deg, #060F63 8.14%, #2633db 86.21%, #9051F9 100%);
-   border-radius: 2px;
+   background-color: #5B35C7;
+   border-radius: 10px;
    cursor: pointer;
+   box-shadow: 0 19px 45px -10px rgba(13, 15, 18, 0.50);
+
    
-   .roboto-medium();
-   font-size: 2.2rem;
-   line-height: 2.4rem;
+   .opensans-medium();
+   font-size: 1.1rem;
+   line-height: 1.2rem;
    color: @color-back-white;
-   text-transform: uppercase;
-    text-shadow: 0 0 2px rgba(244, 245, 246, 0.5);
    
    .tr();
 }
 .register__text:hover {
-   //background: linear-gradient(81deg, #060F63 1.14%, #2C3BFF 52.21%, #9051F9 79.32%);
-   animation-name: color;
-   animation-duration: .3s;
-   animation-fill-mode: forwards;
-   animation-direction: alternate;
-   animation-timing-function: ease-in-out;
-   
-   color: white;
-   text-shadow: 0 0 2px rgba(255, 255, 255, .75);
-}
-
-@keyframes color {
-   10% {    background: linear-gradient(81deg, #060F63 8.14%, #2633db 86.21%, #9051F9 100%) }
-   25% {   background: linear-gradient(81deg, #060F63 5.14%, #2C3BFF 75.21%, #9051F9 90.32%);}
-   35% {   background: linear-gradient(81deg, #060F63 3.14%, #2C3BFF 70.21%, #9051F9 84.32%);}
-   45% {   background: linear-gradient(81deg, #060F63 1.14%, #2C3BFF 56.21%, #9051F9 78.32%);}
-   55% {   background: linear-gradient(81deg, #060F63 1.14%, #2C3BFF 23.21%, #9051F9 67.32%);}
-   65% {   background: linear-gradient(81deg, #060F63 1.14%, #2C3BFF 19.21%, #9051F9 55.32%); }
-   100% {   background: linear-gradient(81deg, #060F63 1.14%, #2C3BFF 13.21%, #9051F9 45.32%); }
+   .tr();
 }

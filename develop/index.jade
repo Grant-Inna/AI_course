@@ -2,106 +2,22 @@ doctype
 html
 
    include assets/jade/static/__head
-   +title( 'Центры цифрового образования детей IT-cube' )
+   +title( 'Курс по Искусственному интеллекту' )
 
    body
       include assets/jade/static/metrika
       #container_main
-         section( aria-label='Меню и логотип онлайн-курса' ).header__container
-            .wrapper
-               section( aria-label='Меню' )#menu.menu__container
-                  a( href='#about').menu__item О&nbsp;проекте
-                  a( href='#video').menu__item Видео
-                  a( href='#reason').menu__item Чем полезен курс
-                  a( href='#partners').menu__item Парнеры и&nbsp;контакты
-               .section( aria-label='Онлайн-курс просветительских лекций "Искусственный интелект - интернет 21 века"' ).logo__container
-                  .logo__holder
-                     .ratio
-                     .ratio_absolute
-                        .logo
-                  .caption__holder
-                     .ratio
-                     .ratio_absolute
-                        .caption_img
-         section( aria-label='Обращение Путина' ).appeal__container
-            .wrapper
-               .appeal__holder
-                  .appeal__image
-                     .ratio
-                     .ratio_absolute
-                        .image
-                  .appeal__text
-                     h1.mb2 Задача нового этапа в&nbsp;горизонте текущего десятилетия&nbsp;&mdash; обеспечить именно массовое внедрение искусственного интеллекта, оно должно охватить все отрасли экономики и&nbsp;социальной сферы и&nbsp;систему госуправления
-                     i президент России Владимир&nbsp;Путин
+         #black_back
+         include ./assets/jade/header/header
+         include ./assets/jade/header/mobile
+         include ./assets/jade/content/main
+         include ./assets/jade/content/banner
+         include ./assets/jade/content/program
+         include ./assets/jade/content/purpose
+         include ./assets/jade/content/benefit
+         include ./assets/jade/content/announcement
+         include ./assets/jade/content/carousel
 
-         section( aria-label='О проекте' )#about.about__container.mb6
-            .wrapper
-               .row.block-right
-                  .about__holder
-                     h1.caption О&nbsp;проекте
-                  .about__holder Осведомлённость о&nbsp;новинках и&nbsp;способность их использования педагогами позволит наладить трехстороннее взаимодействие &laquo;учитель&nbsp;&mdash; ученик&nbsp;&mdash; технологии&raquo;, тем самым модернизируя образовательный процесс.
-                  .about__holder.block-left
-                     p.mb2 Активное развитие технологий искусственного интеллекта приводит к&nbsp;тому, что они проникают все глубже во&nbsp;все сферы деятельности человека.
-                     p Применение технологий искусственного интеллекта в&nbsp;образовании открывает новые возможности, как для педагога, так и&nbsp;для обучающихся.
-                  .about__holder.about_image
-
-         section( aria-label='Актуальность' )#reason.reason__container.mb6
-            .wrapper
-               .row.block-right
-                  .reason__holder
-                     h1.caption.mb4 Почему нужно изучать технологии искусственного интеллекта?
-                  .reason__holder
-                     .reason__text
-                        p ИИ уже используется в&nbsp;различных областях, от&nbsp;автоматического перевода до&nbsp;автономных автомобилей
-                     .ratio
-                     .ratio_absolute
-                        .reason_block-1
-
-                  .reason__holder
-                     .reason__text
-                        p ИИ может помочь улучшить образование, анализируя данные об&nbsp;учениках и&nbsp;предоставляя персонализированный подход к&nbsp;обучению
-                     .ratio
-                     .ratio_absolute
-                        .reason_block-2.block-left
-                  .reason__holder
-                     .reason__text
-                        p ИИ может помочь улучшить процессы в&nbsp;бизнесе, медицине и&nbsp;других отраслях
-                     .ratio
-                     .ratio_absolute
-                        .reason_block-3
-
-               .register__button
-                  a( href='https://go.reezonly.com/course/2113' target='_blank').register__text
-                     span Зарегистрироваться на&nbsp;курс
-
-         section( aria-label='Польза для педагогов' ).benefit__container
-            .wrapper
-               .row
-                  .benefit__holder
-                     h1.caption.text-white.mb4 Почему это полезно педагогам?
-                  .benefit__holder.benefit_text__holder
-                     .benefit__icon.benefit_icon-1
-                     .benefit__text Создание интерактивных  и&nbsp;красочных уроков
-                  .benefit__holder.benefit_text__holder
-                     .benefit__icon.benefit_icon-2
-                     .benefit__text Повышение цифровой грамотности
-                  .benefit__holder.benefit_text__holder
-                     .benefit__icon.benefit_icon-3
-                     .benefit__text Автоматизация некоторых задач, таких как проверка тестов и&nbsp;заданий
-
-         section( aria-label='Видео с анонсом курса')#video.video__container
-            .wrapper
-
-               .video_relative
-                  .video_ratio
-                  .iframe_holder
-                     video(width='100%' height='auto' controls='controls' poster='./assets/data/images/poster.jpg')
-                       source(src='./assets/data/files/Анонс.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
-                       |    Тег video не&nbsp;поддерживается вашим браузером
-
-               .register__button
-                  a( href='https://go.reezonly.com/course/2113' target='_blank').register__text
-                     span Зарегистрироваться на&nbsp;курс
 
          section( aria-label='Парнеры и контакты' )#partners.partners__container
             .wrapper

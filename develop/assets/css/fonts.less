@@ -1,39 +1,27 @@
-@family: 'Roboto';
+@family: 'OpenSans';
 
+@weight1: 'Light';
+@w-num1: 300;
 
-@weight0: 'Light';
-@w-num0: 300;
+@weight2: 'Regular';
+@w-num2: 400;
 
-@weight1: 'Regular';
-@w-num1: 400;
+@weight3: 'Medium';
+@w-num3: 500;
 
-@weight2: 'Medium';
-@w-num2: 500;
+@weight4: 'SemiBold';
+@w-num4: 600;
 
+@weight5: 'Bold';
+@w-num5: 700;
 
-@weight3: 'Bold';
-@w-num3: 700;
-
-@weight4: 'Black';
-@w-num4: 800;
-
-
-@weight5: 'MediumItalic';
-@w-num5: 500;
+@weight6: 'ExtraBold';
+@w-num6: 800;
 
 
 
+@font-path: '../fonts/Open_Sans/@{family}';
 
-
-@font-path: '../fonts/@{family}/@{family}';
-
-@font-face {
-  font-family: @family;
-    src: local('@{family} @{weight0}'), local('@{family}-@{weight0}'),
-        url('@{font-path}-@{weight0}.ttf') format('truetype');
-    font-weight: @w-num0;
-    font-style: normal;
-}
 @font-face {
   font-family: @family;
     src: local('@{family} @{weight1}'), local('@{family}-@{weight1}'),
@@ -64,49 +52,72 @@
 }
 @font-face {
   font-family: @family;
-    src: local('@{family} @{weight4}'), local('@{family}-@{weight4}'),
-        url('@{font-path}-@{weight4}.ttf') format('truetype');
-    font-weight: @w-num4;
+    src: local('@{family} @{weight5}'), local('@{family}-@{weight5}'),
+        url('@{font-path}-@{weight5}.ttf') format('truetype');
+    font-weight: @w-num5;
     font-style: normal;
 }
 @font-face {
   font-family: @family;
-    src: local('@{family} @{weight5}'), local('@{family}-@{weight5}'),
-        url('@{font-path}-@{weight5}.ttf') format('truetype');
-    font-weight: @w-num5;
+    src: local('@{family} @{weight6}'), local('@{family}-@{weight6}'),
+        url('@{font-path}-@{weight6}.ttf') format('truetype');
+    font-weight: @w-num6;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+        url('../fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight: 400;
     font-style: italic;
 }
 
 
 
-.roboto-light() {
-   font-family: 'Roboto', Arial, sans-serif;
+
+.opensans-light() {
+   font-family: 'OpenSans', Georgia, sans-serif;
    font-weight: 300;
    font-style: normal;
 }
-.roboto-regular() {
-   font-family: 'Roboto', Arial, sans-serif;
+.opensans-regular() {
+   font-family: 'OpenSans', Georgia, sans-serif;
    font-weight: 400;
    font-style: normal;
 }
-.roboto-medium() {
-   font-family: 'Roboto', Arial, sans-serif;
+.opensans-medium() {
+   font-family: 'OpenSans', Georgia, sans-serif;
    font-weight: 500;
    font-style: normal;
 }
-.roboto-bold() {
-   font-family: 'Roboto', Arial, sans-serif;
+.opensans-semibold() {
+   font-family: 'OpenSans', Georgia, sans-serif;
+   font-weight: 600;
+   font-style: normal;
+}
+.opensans-bold() {
+   font-family: 'OpenSans', Georgia, sans-serif;
    font-weight: 700;
    font-style: normal;
 }
-.roboto-black() {
-   font-family: 'Roboto', Arial, sans-serif;
+.opensans-extrabold() {
+   font-family: 'OpenSans', Georgia, sans-serif;
    font-weight: 800;
    font-style: normal;
 }
 
-.roboto-mi() {
-   font-family: 'Roboto', Arial, sans-serif;
-   font-weight: 500;
+
+
+
+.roboto-italic() {
+   font-family: 'Roboto', Verdana, sans-serif;
+   font-weight: 400;
    font-style: italic;
 }
+
+
+
+
+
