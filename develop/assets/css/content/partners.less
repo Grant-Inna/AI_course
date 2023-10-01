@@ -1,6 +1,16 @@
-
 .partners__container {
-   padding: 10rem 0
+   position: relative;
+   padding: 10rem 0 20rem;
+   overflow: hidden;
+}
+.partners__container:after {
+   .pseudo();
+   width: 100%;
+   height: 32rem;
+   
+   bottom: -12rem;
+   right: 0;
+   .lines-bottom();
 }
 .partners__container .row {
    .items-start();
