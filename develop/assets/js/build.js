@@ -79,7 +79,7 @@ $(document).ready(function () {
       $mobile_trigger.on('click', showAsideMenu);
       
       var menu_show_style = {
-         right: 0,
+         right: '-1px',
          opacity: '1'
       };
       
