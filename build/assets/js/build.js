@@ -61,10 +61,11 @@ $(document).ready(function () {
       
       var menu_width;
       
-      if (width < 380) {
-         menu_width = width * 0.8
-      } // Ширина меню зависит от размера экрана
-      else if (width < 450) {
+      if (width < 340) {
+         menu_width = width
+      } else if (width < 380) {
+         menu_width = width * 0.8;  // Ширина меню зависит от размера экрана
+      } else if (width < 450) {
          menu_width = width * 0.8
       } else {
          menu_width = width * 0.7
