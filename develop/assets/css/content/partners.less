@@ -39,10 +39,13 @@
    .sm-block({
       margin-top: 2rem;
    });
+   >:last-of-type {
+      margin-right: 0;
+   }
 }
 .members {
    height: 6rem;
-   width: 28%;
+   width: 31%;
    
    margin-right: 3rem;
    margin-bottom: 2rem;
@@ -61,6 +64,7 @@
    .sm-block({
       height: 4rem
    });
+ 
 }
 .member-1 { .p-1();
    max-width: 356px;
@@ -68,6 +72,9 @@
    
    .ll-block({
       height: 6rem;
+   });
+   .lg-block({
+      margin-right: 6rem;
    });
    .md-block({
       height: 5rem;
@@ -77,12 +84,12 @@
    })
 }
 .member-2 { .p-2();
-   max-width: 285px;
-   min-width: 235px;
+   max-width: 265px;
+   min-width: 225px;
    
 }
 .member-3 { .p-3();
-   max-width: 207px;
+   max-width: 187px;
    min-width: 107px;
    
 }

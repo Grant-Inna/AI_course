@@ -46,9 +46,12 @@ main.main__container .wrapper-big {
    max-width: 820px;
    margin-top: 5rem;
    
+   .middle-block({
+      max-width: 730px;
+   });
    .md-block({
       margin-top: 0;
-   })
+   });
 }
 
 
@@ -91,6 +94,10 @@ main.main__container .wrapper-big {
 }
 .main__video .icon-video {
    margin-right: 1.2rem;
+   
+   .lg-block({
+      .size-5();
+   })
 }
 .main__video span {
    .opensans-semibold();
@@ -160,6 +167,10 @@ main.main__container .wrapper-big {
          line-height: 3rem;
       });
    }
+   
+   .xs-block({
+      margin-left: 4rem;
+   })
 }
 .main__start:after {
    .pseudo();
@@ -177,7 +188,14 @@ main.main__container .wrapper-big {
       
       top: -5rem;
       left: -5rem;
-   })
+   });
+   .xs-block({
+      width: 7rem;
+      height: 7rem;
+      
+      top: -4rem;
+      left: -4rem;
+   });
 }
 
 .main__block .register__button {
